@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+   <div class="container">
+    <div class="edit">
+        <div class="edit-container">
+            <div class="dropdown">
+                <input type="number" min="1" max="100" value="16" onchange="f1(this)">                <!-- <select>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>14</option>
+                    <option>16</option>
+                    <option>18</option>
+                    <option>20</option>
+                    <option>22</option>
+                    <option>24</option>
+                    <option>26</option>
+                    <option>28</option>
+                    <option>36</option>
+                    <option>48</option>
+                    <option>72</option>
+                </select> -->
+            </div>
+            <div class="bold" onclick="f2(this)">
+                <box-icon name='bold'></box-icon>
+            </div>
+            <div class="italic" onclick="f3(this)">
+                <box-icon name='italic' ></box-icon>
+            </div>
+            <div class="underline" onclick="f4(this)">
+                <box-icon name='underline' ></box-icon>
+            </div>
+            <div class="left-align" onclick="f5(this)">
+                <box-icon name='align-left' ></box-icon>
+            </div>
+            <div class="center" onclick="f6(this)">
+                <box-icon name='align-middle' ></box-icon>
+            </div>
+            <div class="right-align" onclick="f7(this)">
+                <box-icon name='align-right' ></box-icon>
+            </div>
+            <div class="caps" onclick="f8(this)">
+                <box-icon name='text' ></box-icon>
+            </div>
+            <div class="strikethrough" onclick="f9(this)">
+                <box-icon name='strikethrough' ></box-icon>
+            </div>
+            <div class="color-picker">
+                <input type="color" onchange="f10(this)" id="colorPicker">
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="write">
+        <div class="text-container">
+            <textarea maxlength="5000" id="textarea" placeholder="Write text here"></textarea>
+
+     </div>
+
+
+    </div>
+   </div>
+   <script src="index.js"></script>
+</body>
+</html>
